@@ -1,0 +1,113 @@
+.header {
+	&__container {
+		width: 1216px;
+		height: 100px;
+		margin: 0px auto;
+		font-family: Gilroy;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo p {
+		color: #ffffff;
+		margin: 0px 60px 0px 0px;
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.menu {
+	&__container {
+		display: flex;
+		flex-direction: row;
+		margin: 0 40px 0 0;
+	}
+
+	&__items {
+		display: inline-flex;
+		flex-wrap: wrap;
+		width: 284px;
+		justify-content: space-between;
+	}
+	&__item {
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+
+	&__items-films::after {
+		content: "";
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background: url("../img/icon.png") 0 0 / 100% no-repeat;
+		position: relative;
+		top: 4px;
+		right: 2px;
+	}
+	&__items-video::after {
+		content: "";
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background: url("../img/icon.png") 0 0 / 100% no-repeat;
+		position: relative;
+		top: 4px;
+		right: 2px;
+	}
+	&__items-music::after {
+		content: "";
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background: url("../img/icon.png") 0 0 / 100% no-repeat;
+		position: relative;
+		top: 4px;
+		right: 2px;
+	}
+}
+.search::after {
+	content: "";
+	width: 20px;
+	height: 18px;
+	display: inline-block;
+	background: url("../img/love.png") center / 100% no-repeat;
+	position: relative;
+	top: 11px;
+	left: 28px;
+}
+.form {
+	&__input {
+		width: 574px;
+		height: 41px;
+		padding: 11px 20px 11px 14px;
+		background-color: #111428;
+		border-radius: 4px;
+		border: 1px solid #a3a3a3;
+	}
+
+	&__input-in {
+		background-color: #111428;
+		font-family: Gilroy;
+		color: #ffffff;
+	}
+}
+.header__ecllipse {
+	position: relative;
+	left: 40px;
+	&::after {
+		content: "";
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		background: url("../img/icon.png") 0 0 / 100% no-repeat;
+		position: relative;
+		top: 8px;
+		left: 2px;
+	}
+}

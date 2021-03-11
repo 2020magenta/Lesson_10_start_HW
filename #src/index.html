@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title":"Lesson_10_start_HW"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<div class="block__container">
+					<div class="block__items">
+						<div class="block__title">
+							<div class="title"><span>Восстановление</span> пароля</div>
+							<div class="sub-title"><span>Введите email</span>, на него будет выслан новый пароль</div>
+						</div>
+					</div>
+					<div class="block__items forms">
+						<div class="forms__container">
+							<div class="forms__items">
+								<form action="#">
+									<div class="forms__item">
+										<div class="forms__input">
+											<input type="email" placeholder="Почта*">
+										</div>
+										<div class="autorisation"><span>вернуться</span> в форму авторизации</div>
+										<div class="forms__button">
+											<button type="submit">Отправить</button>
+										</div>
+									</div>
+									<div class="forms__item">
+										<div class="forms__info">
+											<p>* <span>если</span> вы не получили письмо с паролем,
+										проверьте папку <span>спам</span>.</p>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="block__items inform">
+						<div class="inform__container">
+							<div class="inform__items">
+								<div class="inform__text">
+									
+								</div>
+								<div class="inform__link">
+									<p class="inform__link-text">У вас нет аккаунта?</p>
+									<a class="inform__link-chekin" href="">Регистрация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>

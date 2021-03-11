@@ -1,0 +1,157 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "";
+//</Шрифт по умолчанию>==========================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+body {
+	font-size: 16px;
+	background-color: #111428;
+	font-family: Gilroy;
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "header";
+@import "footer";
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	background-color: #111428;
+}
+.page {
+	flex: 1 1 auto;
+}
+//===============================================================================
+.page {
+	padding: 63px 0;
+}
+.block {
+	&__container {
+		max-width: 1216px;
+		height: 530px;
+		margin: 0px auto;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__items {
+		span {
+			text-transform: capitalize;
+		}
+		margin-bottom: 41px;
+	}
+}
+.title {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 38px;
+	margin-bottom: 10px;
+}
+.sub-title {
+	color: #64b369;
+}
+.forms {
+	margin-bottom: 30px;
+	&__container {
+	}
+
+	&__items {
+	}
+
+	&__item {
+	}
+
+	&__input {
+		width: 348px;
+		height: 50px;
+		background-color: #ffffff;
+		padding: 14px 16px 16px 20px;
+		border-radius: 5px;
+		margin-bottom: 31px;
+		input {
+			font-family: Gilroy;
+			font-size: 18px;
+			color: #777777;
+		}
+	}
+
+	&__button {
+		width: 348px;
+		height: 50px;
+		background-color: #337ab7;
+		border-radius: 5px;
+		padding: 9px 0px;
+		margin-bottom: 22px;
+		text-align: center;
+		button {
+			font-family: Gilroy;
+			font-weight: 700;
+			font-size: 24px;
+			color: #ffffff;
+			background-color: #337ab7;
+			text-transform: capitalize;
+		}
+	}
+	&__info {
+		color: #ffffff;
+		width: 348px;
+	}
+}
+.autorisation {
+	color: #ffffff;
+	margin-left: 14px;
+	margin-bottom: 31px;
+	width: 348px;
+}
+.autorisation::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: url("../img/icon_left.png") 0 0 no-repeat;
+	position: relative;
+	left: -14px;
+}
+.block {
+	&__items {
+	}
+}
+.inform {
+	&__container {
+		display: flex;
+		background-color: rgb(161, 83, 83);
+	}
+	&__text {
+		color: #ffffff;
+	}
+	&__items {
+		align-self: stretch;
+	}
+
+	&__link {
+		font-size: 18px;
+		a {
+			color: #64b369;
+		}
+	}
+
+	&__link-text {
+		color: #ffffff;
+	}
+
+	&__link-chekin {
+	}
+}
